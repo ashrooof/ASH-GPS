@@ -80,7 +80,8 @@ private fun AshGpsPremium() {
                 Spacer(Modifier.height(8.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Box(Modifier.size(46.dp).clip(RoundedCornerShape(15.dp)).background(Ink), Alignment.Center) {
-                        Text("A", color = Color.White, fontSize = 25.sp, fontWeight = FontWeight.Black)
+                        Text("A", color = Color.White, fontSize = 26.sp, fontWeight = FontWeight.Black, letterSpacing = (-2).sp)
+                        Box(Modifier.align(Alignment.BottomEnd).padding(7.dp).size(7.dp).clip(CircleShape).background(Accent))
                     }
                     Spacer(Modifier.width(12.dp))
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
@@ -240,7 +241,7 @@ private fun AshGpsPremium() {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.VerifiedUser, null, tint = Secondary, modifier = Modifier.size(13.dp))
                     Spacer(Modifier.width(6.dp))
-                    Text("ASH GPS  •  ULTRA PREMIUM  •  AD-FREE", color = Secondary, fontSize = 9.sp, letterSpacing = 1.sp)
+                    Text("ASH GPS  •  AD-FREE  •  © أشـــــــروف", color = Secondary, fontSize = 9.sp, letterSpacing = .5.sp)
                 }
                 Spacer(Modifier.height(10.dp))
             }
